@@ -383,11 +383,11 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: grey;
-  font-size: 50px;
+  font-size: 3.125em;
 }
 
 span {
-  font-size: 25px;
+  font-size: 1.563em;
   font-style: italic;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: grey;
@@ -408,6 +408,7 @@ nav {
   -o-background-size: cover;
   background-size: cover;
   background-attachment: scroll;
+  font-size: 1em;
 }
 
 ul {
@@ -448,6 +449,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+p {
+  font-size: 1em;
 }
 
 .info {
@@ -659,5 +664,13 @@ h4 {
   .cancelbtn,
   .signupbtn {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
